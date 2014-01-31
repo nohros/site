@@ -1,0 +1,32 @@
+.home {
+  text-align: center;
+
+  .area {
+    text-align:  center;
+    width:100%;
+    font-size: 60px;
+    font-weight: 200;
+    margin: 30px;
+
+    p {
+      font-size: 30px;
+      color: #d2d2d2;
+    }
+
+    ul {
+      background-color: gray;
+    }
+
+    li {
+      list-style-type: none;
+      float: left;
+      height: 30px;
+      line-height: 30px;
+      width:30%;
+
+      a {
+        padding: 20px;
+      }
+    }
+  }
+}

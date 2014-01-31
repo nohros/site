@@ -30,7 +30,7 @@ module.exports = {
     ctpl: [ 'src/common/**/*.tpl.html' ],
 
     html: [ 'src/index.html' ],
-    sass: 'src/sass/main.scss'
+    sass: [ 'src/sass/main.scss' ]
   },
 
   /**
@@ -63,11 +63,12 @@ module.exports = {
   vendor_files: {
     js: [
       'vendor/angular/angular.js',
-      'vendor/angular-ui-router/release/angular-ui-router.js'
+      'vendor/angular-ui-router/release/angular-ui-router.js',
+      'vendor/nsTopBar/src/nsTopBar.js'
     ],
     css: [
     ],
     assets: [
     ]
-  },
+  }
 };

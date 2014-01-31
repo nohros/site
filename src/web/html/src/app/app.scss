@@ -1,0 +1,19 @@
+$app-link-color: #1570a6 !default;
+
+@mixin link($color: $app-link-color) {
+  color: $color;
+
+  &:hover {
+    color: darken($color, 20%);
+    text-decoration: underline;
+  }
+}
+
+body {
+  font-family: arial, sans-serif;
+  background: transparent url('grey-texture.gif');
+}
+
+.link {
+  @include link();
+}

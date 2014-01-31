@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<html ng-app="ngBoilerplate" ng-controller="AppCtrl">
+﻿<!DOCTYPE html>
+<html ng-app="site" ng-controller="AppCtrl">
   <head>
+    <meta charset="utf-8">
     <title ng-bind="pageTitle"></title>
 
     <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
@@ -10,6 +11,11 @@
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
   </head>
   <body>
-    <div ng-view></div>
+
+  <form>
+    <div ui-view="header"></div>
+    <div ui-view="content"></div>
+    <div ui-view="footer"></div>
+  </form>
   </body>
 </html>

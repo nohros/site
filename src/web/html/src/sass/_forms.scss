@@ -1,0 +1,40 @@
+$input-bg-color: #fff;
+$input-focus-border-color: darken(#fff, 40%) !default;
+$input-focus-bg-color: darken(#fff, 2%) !default;
+$input-border-color: darken(#fff, 20%) !default;
+
+@mixin form-element {
+  background-color: $input-bg-color;
+  border: solid 1px $input-border-color;
+  width: 100%;
+  @include box-sizing(border-box);
+  @include radius(3px);
+
+// Basic focus styles
+  &:focus {
+    background: $input-focus-bg-color;
+    border-color: $input-focus-border-color;
+    outline: none;
+  }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  @include form-element;
+  @include single-transition(all, 0.15s, linear);
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ng-boilerplate",
+  "version": "0.3.1",
+  "devDependencies": {
+    "angular": "~1.0.7",
+    "angular-mocks": "~1.0.7",
+    "angular-ui-router": "0.2.8-bowratic-tedium",
+    "foundation": "~5.0.2",
+    "font-awesome": "~4.0.3",
+    "gToast": "~0.1.0",
+    "nsTopBar": "~0.1.0"
+  },
+  "dependencies": {},
+  "resolutions": {
+    "angular": "~1.2.9"
+  }
+}

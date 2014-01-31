@@ -1,0 +1,22 @@
+.footer {
+  background: rgb(238,238,238);
+  padding: rem-calc(20) 0;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: rem-calc(10);
+  }
+
+  a {
+    @include link();
+    font-size: rem-calc(14);
+  }
+
+  .map {
+    float:left;
+    margin-right: 40px;
+  }
+}
